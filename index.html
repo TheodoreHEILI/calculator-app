@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="display">
+      <span class="display-value" id="display">0</span>
+    </div>
+    <div class="keypad">
+      <button type="button" class="btn btn-ac" data-action="clear">AC</button>
+      <button type="button" class="btn btn-operator" data-action="toggle">±</button>
+      <button type="button" class="btn btn-operator" data-action="percent">%</button>
+      <button type="button" class="btn btn-operator" data-action="operator" data-operator="÷">÷</button>
+
+      <button type="button" class="btn btn-number" data-digit="7">7</button>
+      <button type="button" class="btn btn-number" data-digit="8">8</button>
+      <button type="button" class="btn btn-number" data-digit="9">9</button>
+      <button type="button" class="btn btn-operator" data-action="operator" data-operator="×">×</button>
+
+      <button type="button" class="btn btn-number" data-digit="4">4</button>
+      <button type="button" class="btn btn-number" data-digit="5">5</button>
+      <button type="button" class="btn btn-number" data-digit="6">6</button>
+      <button type="button" class="btn btn-operator" data-action="operator" data-operator="−">−</button>
+
+      <button type="button" class="btn btn-number" data-digit="1">1</button>
+      <button type="button" class="btn btn-number" data-digit="2">2</button>
+      <button type="button" class="btn btn-number" data-digit="3">3</button>
+      <button type="button" class="btn btn-operator" data-action="operator" data-operator="+">+</button>
+
+      <button type="button" class="btn btn-number btn-zero" data-digit="0">0</button>
+      <button type="button" class="btn btn-number" data-action="decimal">.</button>
+      <button type="button" class="btn btn-equals" data-action="equals">=</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
